@@ -154,8 +154,15 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-9s-mnN">
+                                                    <rect key="frame" x="317" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="wX7-zd-9Dc" firstAttribute="baseline" secondItem="b7h-9s-mnN" secondAttribute="baseline" id="5Cn-59-dgR"/>
                                                 <constraint firstItem="RXt-4k-gwr" firstAttribute="leading" secondItem="C37-YM-qpJ" secondAttribute="leadingMargin" constant="-16" id="5dT-Ct-sqw"/>
                                                 <constraint firstItem="sCE-3N-ZCO" firstAttribute="top" secondItem="pEG-mo-LOI" secondAttribute="bottom" constant="8" id="74l-01-idR"/>
                                                 <constraint firstItem="sCE-3N-ZCO" firstAttribute="trailing" secondItem="zsy-SZ-KU3" secondAttribute="trailing" id="HJk-ak-iqo"/>
@@ -170,11 +177,13 @@
                                                 <constraint firstItem="wX7-zd-9Dc" firstAttribute="leading" secondItem="pEG-mo-LOI" secondAttribute="leading" id="drU-w7-H16"/>
                                                 <constraint firstItem="wX7-zd-9Dc" firstAttribute="trailing" secondItem="pEG-mo-LOI" secondAttribute="trailing" id="hP9-N9-0Yb"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="RXt-4k-gwr" secondAttribute="bottom" constant="-1" id="rY1-i1-zHV"/>
+                                                <constraint firstItem="wX7-zd-9Dc" firstAttribute="trailing" secondItem="b7h-9s-mnN" secondAttribute="trailing" id="tYK-s1-aBS"/>
                                                 <constraint firstItem="pEG-mo-LOI" firstAttribute="trailing" secondItem="sCE-3N-ZCO" secondAttribute="trailing" id="uBs-tC-qVg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="sCE-3N-ZCO" id="sK5-8a-mMO"/>
+                                            <outlet property="documentIdLabel" destination="b7h-9s-mnN" id="trd-8J-fip"/>
                                             <outlet property="likeLabel" destination="zsy-SZ-KU3" id="uAc-g2-ahm"/>
                                             <outlet property="userEmailLabel" destination="wX7-zd-9Dc" id="t2k-xU-ShL"/>
                                             <outlet property="userImageView" destination="pEG-mo-LOI" id="z3f-hY-UN5"/>
